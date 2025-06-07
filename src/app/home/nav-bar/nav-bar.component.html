@@ -1,0 +1,32 @@
+<div [class]="{
+  'flex': true,
+  'navbar': true,
+  'px-2': true,
+  'h-6rem': true,
+  'shadow-3': true,
+}">
+  <div class="flex justify-content-center align-items-center ml-3">
+    <button  [routerLink]="'/'">
+      <img
+        class="h-2rem cursor-pointer"
+        alt="Curativa"
+      />
+    </button>
+  </div>
+  <div class="flex flex-column justify-content-center align-items-end w-full ml-3 gap-2">
+    <div>
+      <span class="flex align-items-center gap-2">
+        <label> OLÁ, {{ nome ? nome : ("*****" ) | uppercase }} </label>
+        <button class="cursor-pointer" [routerLink]="'/'">
+        </button>
+        <p-button
+          (onClick)="logout()"
+          label="Sair"
+          severity="danger"
+          icon="pi pi-sign-out"
+          size="small"
+        />
+      </span>
+    </div>
+  </div>
+</div>
