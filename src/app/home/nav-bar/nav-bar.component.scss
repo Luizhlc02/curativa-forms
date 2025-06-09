@@ -6,17 +6,3 @@ button {
 .navbar {
   background-color: #fff ;
 }
-
-:host ::ng-deep .p-select{
-  min-width: 20rem;
-  max-width: 40rem;
-  width: fit-content;
-}
-
-@media screen and (max-width: 600px) {
-  
-  :host ::ng-deep .p-select{
-    min-width: 5rem;
-    max-width: 12rem;
-  }
-}
