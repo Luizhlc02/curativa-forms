@@ -1,0 +1,53 @@
+<app-view>
+    <div class="teste">
+        <div class="col-12">
+            <p-floatlabel>
+                <label>Nro do boleto</label>
+                <input class="w-full" type="text" pInputText [(ngModel)]="value" [disabled]="true" />
+            </p-floatlabel>
+        </div>
+        <div class="col-12">
+            <p-floatlabel>
+                <label>Beneficiario</label>
+                <input class="w-full" type="text" pInputText [(ngModel)]="value"/>
+            </p-floatlabel>
+        </div>
+        <div class="col-12">
+            <p-floatlabel>
+                <label>Numero total de parcelas</label>
+                <input class="w-full" type="text" pInputText [(ngModel)]="value"/>
+            </p-floatlabel>
+        </div>
+        <div class="col-12">
+            <p-floatlabel>
+                <label>Numero da parcela atual</label>
+                <input class="w-full" type="text" pInputText [(ngModel)]="value"/>
+            </p-floatlabel>
+        </div>
+        <div class="col-12">
+            <p-floatlabel>
+                <label>Valor da parcela</label>
+                <input class="w-full" type="text" pInputText [(ngModel)]="value"/>
+            </p-floatlabel>
+        </div>
+        <div class="col-12">
+            <p-floatlabel>
+                <label>Data de vencimento da parcela atual</label>
+                <input class="w-full" type="text" pInputText [(ngModel)]="value"/>
+            </p-floatlabel>
+        </div>
+        <div class="flex bg-gray-300 h-12rem">
+            <img src="">
+            <p-fileupload 
+                mode="basic" 
+                class="w-full"
+                name="demo[]" 
+                chooseIcon="pi pi-upload" 
+                accept="image/*" 
+                maxFileSize="1000000" 
+                [auto]="true" 
+                chooseLabel="Browse" 
+            />
+        </div>
+    </div>
+</app-view>
